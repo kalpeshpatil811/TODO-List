@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+}
+header{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24pt;
+    color: yellow;
+    border-bottom: solid;
+}
+.container{
+    height: 80%;
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.add_li{
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.add_li input{
+    height: 50px;
+    flex: 1;
+    font-size: 18pt;
+    margin: 5px;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+    background: transparent;
+    color: yellow;
+}
+.add_li button{
+    color: gold;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+.add_li button:hover{
+    border: solid;
+}
+.add_li button img{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.container ol{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 5%;
+    background: yellow;
+    border-radius: 10px;
+}
+.container ol li{
+    width: 60%;
+    font-size: 20pt;
+    background: gold;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    padding: 5px;
+    word-break: break-all;
+    color: crimson;
+    border-radius: 10px;
+    animation-name: slow;
+    animation-duration: 500ms;
+}
+.container ol li input{
+    height: 40px;
+    font-size: 16pt;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+    background: transparent;
+    color: crimson;
+}
+.container ol li button{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 6px;
+    float: right;
+    background: transparent;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.container ol button:hover{
+    background: yellow;
+}
+.container ol button img{
+    height: 100%;
+    width: 100%;
+}
+.invisible{
+    opacity: 0;
+}
+.delete{
+    transform: translateY(20px) rotateZ(10deg);
+    opacity: 0;
+    transition: 800ms all ease;
+}
+
+@keyframes slow {
+    0%{ margin-left: 0%;}
+    10%{ margin-left: 1%;}
+    20%{ margin-left: 2%;}
+    30%{ margin-left: 3%;}
+    40%{ margin-left: 4%;}
+    50%{ margin-left: 5%;}
+    60%{ margin-left: 6%;}
+    70%{ margin-left: 7%;}
+    80%{ margin-left: 8%;}
+    90%{ margin-left: 9%;}
+    100%{ margin-left: 11%;}
+}
